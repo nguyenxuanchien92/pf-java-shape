@@ -1,3 +1,7 @@
+package test;
+
+import entities.Square;
+
 public class SquareTest {
     public static void main(String[] args) {
         Square square = new Square();

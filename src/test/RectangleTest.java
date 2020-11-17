@@ -1,3 +1,7 @@
+package test;
+
+import entities.Rectangle;
+
 public class RectangleTest {
     public static void main(String[] args) {
         Rectangle rectangle = new Rectangle();

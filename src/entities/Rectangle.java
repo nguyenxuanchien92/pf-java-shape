@@ -1,3 +1,7 @@
+package entities;
+
+import service.Resizable;
+
 public class Rectangle extends Shape implements Resizable {
     private double width = 1.0;
     private double length = 1.0;
@@ -42,7 +46,7 @@ public class Rectangle extends Shape implements Resizable {
 
     @Override
     public String toString() {
-        return "A Rectangle with width="
+        return "A entities.Rectangle with width="
                 + getWidth()
                 + " and length="
                 + getLength()

@@ -1,3 +1,7 @@
+package entities;
+
+import service.Resizable;
+
 public class Circle extends Shape implements Resizable {
     private double radius = 1.0;
 
@@ -31,7 +35,7 @@ public class Circle extends Shape implements Resizable {
 
     @Override
     public String toString() {
-        return "A Circle with radius="
+        return "A entities.Circle with radius="
                 + getRadius()
                 + ", which is a subclass of "
                 + super.toString();

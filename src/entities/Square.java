@@ -1,3 +1,7 @@
+package entities;
+
+import service.Resizable;
+
 public class Square extends Rectangle implements Resizable {
     public Square() {
     }
@@ -31,7 +35,7 @@ public class Square extends Rectangle implements Resizable {
 
     @Override
     public String toString() {
-        return "A Square with side="
+        return "A entities.Square with side="
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
