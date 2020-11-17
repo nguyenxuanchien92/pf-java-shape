@@ -1,4 +1,4 @@
-public class Square extends Rectangle {
+public class Square extends Rectangle implements Resizable {
     public Square() {
     }
 
@@ -35,5 +35,11 @@ public class Square extends Rectangle {
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void resized(double percent) {
+        double val = this.getSide() + this.getSide() * percent / 100;
+        this.setSide(val);
     }
 }
